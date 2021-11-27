@@ -21,20 +21,24 @@ const Profile = () => {
               {githubState.user.login}
             </a>
           </S.WrapperUserGeneric>
-          <S.WrapperUserGeneric>
-            <h3>Company:</h3>
-            <span>{githubState.user.company}</span>
-          </S.WrapperUserGeneric>
+          {githubState.user.company &&
+            <S.WrapperUserGeneric>
+              <h3>Company:</h3>
+              <span>{githubState.user.company}</span>
+            </S.WrapperUserGeneric>
+          }
           <S.WrapperUserGeneric>
             <h3>Location:</h3>
             <span>{githubState.user.location}</span>
           </S.WrapperUserGeneric>
-          <S.WrapperUserGeneric>
-            <h3>Blog:</h3>
-            <a href={githubState.user.blog} target="_blank" rel="noreferrer">
-              {githubState.user.blog}
-            </a>
-          </S.WrapperUserGeneric>
+          {githubState.user.blog &&
+            <S.WrapperUserGeneric>
+              <h3>Blog:</h3>
+              <a href={githubState.user.blog} target="_blank" rel="noreferrer">
+                {githubState.user.blog}
+              </a>
+            </S.WrapperUserGeneric>
+          }
         </div>
         <S.WrapperStatusCount>
           <div>

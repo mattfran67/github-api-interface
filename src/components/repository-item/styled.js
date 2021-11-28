@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   border-radius: 8px;
   border: 1px solid #ccc;
   margin: 16px 16px;
-  width: 350px;
   height: 150px;
   align-content: center;
 `;

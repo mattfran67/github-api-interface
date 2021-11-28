@@ -36,7 +36,6 @@ export const WrapperTab = styled(Tab)`
 WrapperTab.tabsRole = "Tab";
 
 export const WrapperTabPanel = styled(TabPanel)`
-  padding: 16px;
   border: 1px solid "#ccc";
   display: none;
   margin-top: -5px;
@@ -48,7 +47,6 @@ export const WrapperTabPanel = styled(TabPanel)`
 WrapperTabPanel.tabsRole = "TabPanel";
 
 export const WrapperList = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 `;
